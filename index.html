@@ -8,13 +8,28 @@
         <title>Legal Drinking Age Counter</title>
         <meta name="description" content="Get the current DOB (Date Of Birth) of who can legally drink in australia">
         <meta name="author" content="">
-
+        <style>
+            .box {
+                font-family: arial;
+                font-size: 24px;
+                margin: 25px;
+                width: 350px;
+                height: 200px;
+                outline: dashed 1px black;
+            }
+            
+            p {
+              text-align: center;
+            }
+        </style>
 
     </head>
     <body>
-        <h1>Whoever is born before</h1>
-        <h1 id='time'></h1>
-        <h1>Can Drink</h1>
+        <div class="box">
+            <p>Whoever is born before</p>
+            <p id='time'></p>
+            <p>Can Drink</p>
+        </div>
     </body>
     <script>
         var date = new Date();
