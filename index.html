@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Legal Drinking Age Counter</title>
+        <meta name="description" content="Get the current DOB (Date Of Birth) of who can legally drink in australia">
+        <meta name="author" content="">
+
+
+    </head>
+    <body>
+        <h1>Whoever is born before</h1>
+        <h1 id='time'></h1>
+        <h1>Can Drink</h1>
+    </body>
+    <script>
+        var date = new Date();
+        var legalYear = date.getFullYear() - 18;
+        date.setFullYear(legalYear);
+        document.getElementById("time").textContent=date.toLocaleDateString('en-au');
+    </script>
+</html>
